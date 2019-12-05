@@ -1,6 +1,4 @@
-<center><img src="{{ site.baseurl }}/tutheaderbl.png" alt="Img"></center>
-
-To add images, replace `tutheaderbl1.png` with the file name of any image you upload to your GitHub repository.
+<center><img src="{{ https://github.com/EdDataScienceEES/tutorial-lynseythomson/blob/master/Blue_Marker_map.png }}/Blue_Marker_map.png" alt="Img"></center>
 
 # Intro to Making Study Site Maps
 ### Tutorial Aims
@@ -13,11 +11,10 @@ To add images, replace `tutheaderbl1.png` with the file name of any image you up
 
 Ever struggled creating a map for you study sites? Fear not! Intro to making Study Site Maps is here to save you trouble and heartache, by using the leaflet package!
 ---------------------------
-We are using `<a href="#section_number">text</a>` to create anchors within our text. For example, when you click on section one, the page will automatically go to where you have put `<a name="section_number"></a>`.
 
 Study site maps are important for field studies. They allow a visual aid to sample sites, transparancy, and can help with future replication.
 
-This tutorial will look at creating a study site map with code, using R Studio and the **leaflet** package.
+This tutorial will look at creating a study site map with code, using R Studio and the <a href="https://rstudio.github.io/leaflet/" target="_blank">leaflet</a> package.
 
 You can get all of the resources for this tutorial from <a href="https://github.com/EdDataScienceEES/tutorial-lynseythomson" target="_blank">this GitHub repository</a>. Clone and download the repo as a zip file, then unzip it.
 
@@ -34,7 +31,10 @@ The leaflet package is useful, as it can work with data frames with lattitude an
 ### Getting Started
 Firstly, please open 'R Studio', create a new a new script by clicking on the `File/ New File/ R Script`. Remember to date your script, add your name, and contact details at the start of the script, using hastags to add clear comments.
 
-If you are unsure of how to use GitHub or R Studio, check out these handy tutorials.
+If you are unsure of how to use <a href="https://ourcodingclub.github.io/2017/02/27/git.html">Github</a> or <a href="https://ourcodingclub.github.io/2016/11/13/intro-to-r.html">R Studio</a>, check out these handy tutorials.
+
+
+
 
 ```
 # ============  Intro to Map Making  ==============
@@ -79,7 +79,6 @@ View(site_coords)
 Furthermore, when assinging the data frame to an object, it's useful to use informative names. Above, we use 'site_coords' which is easily recognisable, compared to for example naming it 'first_object'.
 
 <a name="section2"></a>
-
 ## 2. Creating the site map.
 Using the `leaflet()` function, we will create the study site map. Wrapping the whole code snippet in () will make it easier to save/export. Here, we are adding black circles as markers. The leaflet package is highly customisable, notice there are a number of different elements you can add. However, we have left them blank in this example.
 
@@ -143,8 +142,7 @@ At this point it would be a good idea to include an image of what the plot is me
 
 <center> <img src="{{ https://github.com/EdDataScienceEES/tutorial-lynseythomson }}/IMAGE_NAME.png" alt="Img" style="width: 800px;"/> </center>
 
-<a name="3. Challenge!"></a>
-
+<a name="section2"></a>
 ## 3. Editing the colours!
 Now, let's jazz it up a little and add red, opaque markers with the study site names as well. You can play around with the colour outline and fill.
 
@@ -187,8 +185,7 @@ http://rpubs.com/lynseythomson/556440
 - Adding colour markers, and changing the design!
 
 ### Useful Links
-- To read more about the leaflet package click here: https://rstudio.github.io/leaflet/map_widget.html
-
+- To read more about the leaflet package click <a href="https://rstudio.github.io/leaflet/map_widget.html">here</a>, or here: <a href="https://bookdown.org/yihui/rmarkdown/interactive-documents.html">here</a>.
 
 - For more on `ggplot2`, read the official <a href="https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf" target="_blank">ggplot2 cheatsheet</a>.
 
