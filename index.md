@@ -97,7 +97,9 @@ A useful element to add is the `addScaleBar()` because this is essential in scie
              label= ~Site_Name) %>%    # The '~' tell it to use the column 'site_Name' from the df to make labels.
   addScaleBar(position = 'bottomleft')) # Adding a scale bar is important for scientific writing!
 ```
-http://rpubs.com/lynseythomson/556443
+
+<a href="http://rpubs.com/lynseythomson/556443"> Check out this link to see what your map should look like!</a>
+
 
 
 <center><iframe src="{{ https://github.com/lynseythomson/Intro_To_Maps }}//Maps/leafletMap_saved.html" width="100%" height="600px" style="border:none"></iframe></center>
@@ -159,7 +161,11 @@ addCircleMarkers(lng = ~long,
                  label= ~Site_Name) %>%   
   addScaleBar(position = 'bottomleft') 
 ```
-http://rpubs.com/lynseythomson/556442
+
+<a href="http://rpubs.com/lynseythomson/556442"> Check out this link to see what your map should look like!</a>
+
+
+
 
 <center><iframe src="{{ https://github.com/lynseythomson/Intro_To_Maps }}//Maps/Purple_and_blue_map_leaflet.html" width="100%" height="600px" style="border:none"></iframe></center>
 
@@ -174,6 +180,10 @@ leaflet(data = site_coords) %>%
              labelOptions = labelOptions(noHide = T)) %>%
   addScaleBar(position='bottomleft')
 ```
+
+<a href="http://rpubs.com/lynseythomson/556440"> Check out this link to see what your map should look like!</a>
+
+
 http://rpubs.com/lynseythomson/556440
 
 <center><iframe src="{{ https://github.com/lynseythomson/Intro_To_Maps }}//marker_map_saved.html" width="100%" height="600px" style="border:none"></iframe></center>
