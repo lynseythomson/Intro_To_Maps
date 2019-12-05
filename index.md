@@ -101,48 +101,11 @@ A useful element to add is the `addScaleBar()` because this is essential in scie
 <a href="http://rpubs.com/lynseythomson/556443"> Check out this link to see what your map should look like!</a>
 
 
-
 <center><iframe src="{{ https://github.com/lynseythomson/Intro_To_Maps }}//Maps/leafletMap_saved.html" width="100%" height="600px" style="border:none"></iframe></center>
 
 
 <center><img src="{{ https://github.com/lynseythomson/Intro_To_Maps }}/Maps/leafletMap_saved.html" alt="Img"></center>
 
-
-- this is just to seperate html, remove later
-
-<div>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8"/>
-<title>leaflet</title>
-<script src="leafletMap_saved_files/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<script src="leafletMap_saved_files/jquery-1.12.4/jquery.min.js"></script>
-<link href="leafletMap_saved_files/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
-<script src="leafletMap_saved_files/leaflet-1.3.1/leaflet.js"></script>
-<link href="leafletMap_saved_files/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-<script src="leafletMap_saved_files/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
-<script src="leafletMap_saved_files/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="leafletMap_saved_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="leafletMap_saved_files/leaflet-binding-2.0.3/leaflet.js"></script>
-</head>
-<body style="background-color: white;">
-::: {#htmlwidget_container}
-::: {#htmlwidget-9959453bf1225fe94a90 .leaflet .html-widget style="width:100%;height:400px;"}
-:::
-:::
-
-<script type="application/json" data-for="htmlwidget-9959453bf1225fe94a90">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircles","args":[[56.480481,56.458734,56.458324,56.474346,56.472397],[-4.244897,-4.3021,-4.300331,-4.267211,-4.274788],50,null,null,{"interactive":true,"className":"","stroke":false,"color":"black","weight":5,"opacity":0.5,"fill":true,"fillColor":"black","fillOpacity":1},null,null,["Study Site 1","Study Site 2","Study Site 3","Study Site 4","Study Site 5"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null,null]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]}],"limits":{"lat":[56.458324,56.480481],"lng":[-4.3021,-4.244897]}},"evals":[],"jsHooks":[]}</script>
-<script type="application/htmlwidget-sizing" data-for="htmlwidget-9959453bf1225fe94a90">{"viewer":{"width":"100%","height":400,"padding":0,"fill":true},"browser":{"width":"100%","height":400,"padding":0,"fill":true}}</script>
-</body>
-</html>
-	</div>
-
-You can add more text and code, e.g.
-
-At this point it would be a good idea to include an image of what the plot is meant to look like so students can check they've done it right. Replace `IMAGE_NAME.png` with your own image file:
-
-<center> <img src="{{ https://github.com/lynseythomson/Intro_To_Maps }}/IMAGE_NAME.png" alt="Img" style="width: 800px;"/> </center>
 
 <a name="section2"></a>
 ## 3. Editing the colours!
@@ -163,9 +126,6 @@ addCircleMarkers(lng = ~long,
 ```
 
 <a href="http://rpubs.com/lynseythomson/556442"> Check out this link to see what your map should look like!</a>
-
-
-
 
 <center><iframe src="{{ https://github.com/lynseythomson/Intro_To_Maps }}//Maps/Purple_and_blue_map_leaflet.html" width="100%" height="600px" style="border:none"></iframe></center>
 
