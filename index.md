@@ -100,10 +100,10 @@ A useful element to add is the `addScaleBar()` because this is essential in scie
 http://rpubs.com/lynseythomson/556443
 
 
-<center><iframe src="{{https://github.com/EdDataScienceEES/tutorial-lynseythomson }}//Maps/leafletMap_saved.html" width="100%" height="600px" style="border:none"></iframe></center>
+<center><iframe src="{{ https://github.com/lynseythomson/Intro_To_Maps }}//Maps/leafletMap_saved.html" width="100%" height="600px" style="border:none"></iframe></center>
 
 
-<center><img src="{{https://github.com/EdDataScienceEES/tutorial-lynseythomson }}/Maps/leafletMap_saved.html" alt="Img"></center>
+<center><img src="{{ https://github.com/lynseythomson/Intro_To_Maps }}/Maps/leafletMap_saved.html" alt="Img"></center>
 
 
 - this is just to seperate html, remove later
@@ -140,7 +140,7 @@ You can add more text and code, e.g.
 
 At this point it would be a good idea to include an image of what the plot is meant to look like so students can check they've done it right. Replace `IMAGE_NAME.png` with your own image file:
 
-<center> <img src="{{ https://github.com/EdDataScienceEES/tutorial-lynseythomson }}/IMAGE_NAME.png" alt="Img" style="width: 800px;"/> </center>
+<center> <img src="{{ https://github.com/lynseythomson/Intro_To_Maps }}/IMAGE_NAME.png" alt="Img" style="width: 800px;"/> </center>
 
 <a name="section2"></a>
 ## 3. Editing the colours!
@@ -161,7 +161,7 @@ addCircleMarkers(lng = ~long,
 ```
 http://rpubs.com/lynseythomson/556442
 
-<center><iframe src="{{ https://github.com/EdDataScienceEES/tutorial-lynseythomson }}//Maps/Purple_and_blue_map_leaflet.html" width="100%" height="600px" style="border:none"></iframe></center>
+<center><iframe src="{{ https://github.com/lynseythomson/Intro_To_Maps }}//Maps/Purple_and_blue_map_leaflet.html" width="100%" height="600px" style="border:none"></iframe></center>
 
 
 
@@ -176,7 +176,7 @@ leaflet(data = site_coords) %>%
 ```
 http://rpubs.com/lynseythomson/556440
 
-<center><iframe src="{{ https://github.com/EdDataScienceEES/tutorial-lynseythomson }}//marker_map_saved.html" width="100%" height="600px" style="border:none"></iframe></center>
+<center><iframe src="{{ https://github.com/lynseythomson/Intro_To_Maps }}//marker_map_saved.html" width="100%" height="600px" style="border:none"></iframe></center>
 
 
 ### Thank you for taking the time to do this tutorial! Let's recap what we have learned!
