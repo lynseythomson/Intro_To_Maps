@@ -185,7 +185,7 @@ http://rpubs.com/lynseythomson/556440
 - Adding colour markers, and changing the design!
 
 ### Useful Links
-- To read more about the leaflet package click <a href="https://rstudio.github.io/leaflet/map_widget.html">here</a>, or here: <a href="https://bookdown.org/yihui/rmarkdown/interactive-documents.html">here</a>.
+- To read more about the leaflet package click <a href="https://rstudio.github.io/leaflet/map_widget.html">here</a>, or <a href="https://bookdown.org/yihui/rmarkdown/interactive-documents.html">here</a>.
 
 - For more on `ggplot2`, read the official <a href="https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf" target="_blank">ggplot2 cheatsheet</a>.
 
