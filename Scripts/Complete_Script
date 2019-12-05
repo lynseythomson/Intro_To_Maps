@@ -1,0 +1,98 @@
+# ============  Intro to Map Making  ==============
+# ============    Complete script    ==============
+# By Lynsey Thomson
+# Contact: s1745313@ed.ac.uk
+
+# Here is the full working script for "Intro to Map Making tutorial,
+# using Data from my Ecological measurement field course.
+# We will explore 2 ways of vreating maps for the study sites.
+
+
+# Setting up --
+
+# Set the working directory
+setwd("your_filepath")
+
+# Install packages
+install.packages("tidyverse")
+install.packages("leaflet")
+install.packages("readr")
+install.packages("OpenStreetMap")
+install.packages("knitr")
+install.packages("htmlwidgets")
+install.packages("widgetframe")
+
+# Load packages
+library(tidyverse) # for easy data manipulation
+library(leaflet)   # for map making
+library(readr)     # for importing the data set
+library(OpenStreetMap) # the second option for creating map
+library(knitr)
+library(htmlwidgets) # to savethe maps
+library(widgetframe) # to save the maps
+
+
+# ========= Make map with leaflet package ========
+
+# Step 1: load the site coordinates
+site_coords <- read_csv("Raw_Data/site_coords.csv")
+
+# View data to check it loaded properly
+View(site_coords)
+# Looks good!
+
+# Step 2: Use the leaflet() function to create the map
+(leafletMap <- leaflet(data = site_coords) %>%   # The '%>%' sign is called  pipe, and runs the line onto the next line without retyping the object!
+  addTiles() %>% 
+  addCircles(lng = ~long,    # Here we are adding circles to mark the study sites.
+             lat = ~lat,     # When calling data from the data frame, put '~' 
+             radius = 50,
+             fillOpacity = 1,
+             stroke = FALSE,
+             color = 'black',          # Here we are just using black, however other colours can be used!
+             label= ~Site_Name) %>%    # The '~' tell it to use the column 'site_Name' from the df to make labels.
+  addScaleBar(position = 'bottomleft')) # Adding a scale bar is important for scientific writing!
+
+# Step 3: Check the viewer tab... looks good right? Notice how you can zoom in and out using
+# the plus and minus arrows!
+
+# Step 4:Exporting as webpage.
+# Because the mouse must hover over the black spot to see the Study Site name,
+# then we must export this map as a web page, to allow use to still see the names.
+
+saveWidget(leafletMap, file = "leafletMap_saved.html")
+
+frameWidget(leafletMap, height = 350, width = '95%')
+
+
+# TRYING TO SAVE A DIFFERENT WAY
+saveWidgetframe(leafletMap, file = "leafletMap_widget.html", selfcontained = FALSE, libdir = NULL,
+                background = "white", knitrOptions = list())
+
+# This time we are adding blue, slightly opaque cirlces, and the site name appears too!
+(blue_dots_map <- leaflet(data = site_coords) %>%   
+  addTiles() %>% 
+addCircleMarkers(lng = ~long, 
+                 lat = ~lat,
+                 radius = 8 , color="purple",  
+                 fillColor = "blue", 
+                 stroke = TRUE, 
+                 fillOpacity = 0.5,
+                 label= ~Site_Name) %>%   
+  addScaleBar(position = 'bottomleft'))
+
+# save output
+saveWidget(blue_dots_map, file = "blue_dots_map_saved.html")
+
+
+# Add markers with site names.
+(marker_map_leaflet <- leaflet(data = site_coords) %>%
+  addTiles() %>%
+  addMarkers(label = ~Site_Name,
+             labelOptions = labelOptions(noHide = T)) %>%
+  addScaleBar(position='bottomleft'))
+
+# save output
+saveWidget(marker_map_leaflet, file = "marker_map_saved.html")
+
+# save, remember you need to include '© OpenStreetMap contributors'
