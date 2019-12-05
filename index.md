@@ -34,7 +34,10 @@ The leaflet package is useful, as it can work with data frames with lattitude an
 ### Getting Started
 Firstly, please open 'R Studio', create a new a new script by clicking on the `File/ New File/ R Script`. Remember to date your script, add your name, and contact details at the start of the script, using hastags to add clear comments.
 
-```# ============  Intro to Map Making  ==============
+If you are unsure of how to use GitHub or R Studio, check out these handy tutorials.
+
+```
+# ============  Intro to Map Making  ==============
 # ============    Complete script    ==============
 # By Lynsey Thomson
 # Contact: s1745313@ed.ac.uk
@@ -98,7 +101,11 @@ A useful element to add is the `addScaleBar()` because this is essential in scie
 http://rpubs.com/lynseythomson/556443
 
 
-<center><iframe src="{{ site.baseurl }}//Maps/leafletMap_saved.html" width="100%" height="600px" style="border:none"></iframe></center>
+<center><iframe src="{{https://github.com/EdDataScienceEES/tutorial-lynseythomson }}//Maps/leafletMap_saved.html" width="100%" height="600px" style="border:none"></iframe></center>
+
+
+<center><img src="{{https://github.com/EdDataScienceEES/tutorial-lynseythomson }}/Maps/leafletMap_saved.html" alt="Img"></center>
+
 
 - this is just to seperate html, remove later
 
@@ -134,7 +141,7 @@ You can add more text and code, e.g.
 
 At this point it would be a good idea to include an image of what the plot is meant to look like so students can check they've done it right. Replace `IMAGE_NAME.png` with your own image file:
 
-<center> <img src="{{ site.baseurl }}/IMAGE_NAME.png" alt="Img" style="width: 800px;"/> </center>
+<center> <img src="{{ https://github.com/EdDataScienceEES/tutorial-lynseythomson }}/IMAGE_NAME.png" alt="Img" style="width: 800px;"/> </center>
 
 <a name="3. Challenge!"></a>
 
@@ -156,7 +163,7 @@ addCircleMarkers(lng = ~long,
 ```
 http://rpubs.com/lynseythomson/556442
 
-<center><iframe src="{{ site.baseurl }}//Maps/Purple_and_blue_map_leaflet.html" width="100%" height="600px" style="border:none"></iframe></center>
+<center><iframe src="{{ https://github.com/EdDataScienceEES/tutorial-lynseythomson }}//Maps/Purple_and_blue_map_leaflet.html" width="100%" height="600px" style="border:none"></iframe></center>
 
 
 
@@ -171,7 +178,7 @@ leaflet(data = site_coords) %>%
 ```
 http://rpubs.com/lynseythomson/556440
 
-<center><iframe src="{{ site.baseurl }}//marker_map_saved.html" width="100%" height="600px" style="border:none"></iframe></center>
+<center><iframe src="{{ https://github.com/EdDataScienceEES/tutorial-lynseythomson }}//marker_map_saved.html" width="100%" height="600px" style="border:none"></iframe></center>
 
 
 ### Thank you for taking the time to do this tutorial! Let's recap what we have learned!
